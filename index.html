@@ -8,6 +8,8 @@
 <meta property="og:title" content="733 Tiziano Avenue · Coral Gables">
 <meta property="og:description" content="Off-market Platinum Triangle homesite. ±10,200 sf, quiet interior street, bordering Ponce-Davis. Price upon request.">
 <meta property="og:image" content="https://733tiziano.com/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://733tiziano.com/">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231a1f1c'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23c9a96a' text-anchor='middle'%3E733%3C/text%3E%3C/svg%3E">
@@ -39,7 +41,7 @@
 
   /* Hero */
   .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--ink)}
-  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
   .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,14,12,.45) 0%,rgba(10,14,12,.05) 35%,rgba(10,14,12,.55) 70%,rgba(10,14,12,.92) 100%)}
   .hero .wrap{position:relative;z-index:2;padding:0 0 72px}
   .eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:18px}
@@ -92,6 +94,14 @@
   .cell p{font-family:var(--serif);font-size:24px;line-height:1.25;font-weight:500}
   .cell small{display:block;font-size:13px;color:var(--muted);margin-top:8px;font-weight:300}
 
+  .lot{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:40px}
+  @media (max-width:700px){.lot{grid-template-columns:1fr}}
+  .lot figure{margin:0}
+  .lot img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line)}
+  .lot figcaption{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+  .wide{margin-top:40px}
+  .wide img{width:100%;aspect-ratio:16/9;object-fit:cover}
+
   /* Location */
   .map{margin-top:48px;border:1px solid var(--line);background:#ddd;aspect-ratio:16/7;overflow:hidden}
   @media (max-width:700px){.map{aspect-ratio:4/3}}
@@ -138,7 +148,7 @@
 </header>
 
 <section class="hero" id="top" style="padding:0">
-  <img src="images/aerial-front.jpg" alt="Aerial view of 733 Tiziano Avenue, Coral Gables, with the lot boundary outlined" fetchpriority="high">
+  <img src="images/canopy-sidewalk.jpg" alt="Oak canopy over Tiziano Avenue, Coral Gables" fetchpriority="high">
   <div class="wrap">
     <div class="eyebrow">Off-Market &nbsp;·&nbsp; Platinum Triangle &nbsp;·&nbsp; Coral Gables</div>
     <h1>733 Tiziano <em>Avenue</em></h1>
@@ -173,8 +183,8 @@
       </div>
     </div>
     <div class="reveal">
-      <div class="frame"><img src="images/aerial-rear.jpg" alt="Aerial view of the rear yard and lot boundary at 733 Tiziano Avenue" loading="lazy"></div>
-      <div class="cap">Rear aerial · lot boundary indicated · survey to be confirmed by buyer</div>
+      <div class="frame"><img src="images/house-front.jpg" alt="The existing residence at 733 Tiziano Avenue beneath the oaks" loading="lazy"></div>
+      <div class="cap">The existing residence · livable while you design and permit</div>
     </div>
   </div>
 </section>
@@ -194,6 +204,11 @@
       <div class="cell"><h4>Terms</h4><p>As-is · land value</p><small>Clean, fast closing preferred</small></div>
       <div class="cell"><h4>Price</h4><p>Upon request</p><small>Off-MLS; shown by appointment to qualified buyers</small></div>
     </div>
+    <div class="lot reveal">
+      <figure><img src="images/aerial-front.jpg" alt="Straight-down aerial of the lot from the street side, boundary outlined" loading="lazy"><figcaption>Lot from the street side · boundary indicated</figcaption></figure>
+      <figure><img src="images/aerial-rear.jpg" alt="Straight-down aerial of the lot from the rear, boundary outlined" loading="lazy"><figcaption>Lot from the rear · open pad behind the frontage oaks</figcaption></figure>
+    </div>
+    <div class="cap" style="margin-top:14px">Boundary approximate · survey to be confirmed by buyer</div>
   </div>
 </section>
 
@@ -204,6 +219,7 @@
     <div class="prose reveal" style="margin-top:26px">
       <p>Tucked between Sunset Drive and the Ponce-Davis estates, the Platinum Triangle is a small grid of tree-lined streets where original mid-century homes are steadily giving way to custom estates. It is minutes from the Shops at Merrick Park, downtown Coral Gables, the University of Miami, and the Sunset Drive corridor, yet feels entirely residential.</p>
     </div>
+    <div class="wide reveal"><img src="images/aerial-skyline.jpg" alt="Aerial view over the Platinum Triangle toward downtown Miami and Biscayne Bay, 733 Tiziano outlined" loading="lazy"><div class="cap">Looking northeast over the Triangle to downtown and the bay · 733 Tiziano outlined</div></div>
     <div class="pills reveal">
       <span class="pill">Merrick Park</span><span class="pill">Downtown Coral Gables</span><span class="pill">University of Miami</span><span class="pill">Sunset Drive</span><span class="pill">Ponce-Davis</span><span class="pill">Old Cutler Road</span>
     </div>
