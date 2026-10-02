@@ -110,6 +110,12 @@
   .contact-lines a{text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:1px}
   .contact-lines span{display:inline-block;margin:0 14px;color:var(--gold)}
 
+  /* Brokers */
+  .brokers{background:var(--paper-2)}
+  .brokers .grid{margin-top:36px}
+  .btn-line-dark{border:1px solid var(--ink);color:var(--ink)}
+  .btn-line-dark:hover{background:var(--ink);color:#fff}
+
   /* Footer */
   footer{background:#111513;color:rgba(255,255,255,.55);padding:36px 0;font-size:12px;line-height:1.7}
   footer .wrap{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
@@ -211,7 +217,7 @@
   <div class="wrap">
     <div class="label reveal" style="color:var(--gold)">Inquire</div>
     <h2 class="lede reveal">Serious buyers, <em>direct</em> to the owner.</h2>
-    <p class="sub reveal">Pricing, survey, and showing availability are shared with qualified buyers and their representatives. Email is the fastest way to reach us; text is second.</p>
+    <p class="sub reveal">Buyers and their brokers deal directly with the owner. Pricing, survey, and showing availability are shared with qualified buyers and their representatives. Email is the fastest way to reach us; text is second.</p>
     <div class="contact reveal">
       <a class="btn btn-gold js-mail" href="#"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
       <a class="btn btn-line js-sms" href="#"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text</a>
@@ -220,9 +226,28 @@
   </div>
 </section>
 
+<section class="brokers" id="brokers">
+  <div class="wrap">
+    <div class="label reveal">For Brokers</div>
+    <h2 class="lede reveal">Bring your buyer. <em>You'll be paid,</em> and you'll be protected.</h2>
+    <div class="prose reveal" style="margin-top:26px">
+      <p>The seller is a licensed broker and knows what a cooperating broker is worth on a deal like this. Compensation to the buyer's broker is offered on this sale and confirmed in writing before any showing, so there is nothing to negotiate after the fact and nothing to explain to your client.</p>
+    </div>
+    <div class="grid reveal" style="margin-top:36px">
+      <div class="cell"><h4>Compensation</h4><p>Offered &amp; confirmed in writing</p><small>Standard Florida compensation agreement, signed on registration</small></div>
+      <div class="cell"><h4>Registration</h4><p>One email protects you</p><small>Register your buyer by name before showing; first written registration controls</small></div>
+      <div class="cell"><h4>Speed</h4><p>Principal to principal</p><small>Owner answers directly; no listing office, no committee, as-is terms, fast close</small></div>
+    </div>
+    <div class="btns reveal" style="margin-top:36px">
+      <a class="btn btn-gold js-register" href="#">Register a Buyer</a>
+      <a class="btn btn-line-dark js-mail" href="#">Ask a Question</a>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
-    <p>Owners are licensed Florida real estate licensees selling their own property. Property is offered as-is. All dimensions, areas, boundaries, zoning, utilities, and permitting information are approximate, derived from public records, and must be independently verified by buyer. Information is deemed reliable but is not guaranteed and is subject to change or withdrawal without notice. Brokers welcome; please identify your buyer on first contact.</p>
+    <p>Owners are licensed Florida real estate licensees selling their own property. Property is offered as-is. All dimensions, areas, boundaries, zoning, utilities, and permitting information are approximate, derived from public records, and must be independently verified by buyer. Information is deemed reliable but is not guaranteed and is subject to change or withdrawal without notice. Cooperating brokers welcome; register your buyer before showing.</p>
     <div class="fb">733 TIZIANO · CORAL GABLES</div>
   </div>
 </footer>
@@ -241,6 +266,8 @@
     var sms  = "sms:"+tel+"?&body="+encodeURIComponent("Hi — I'm interested in 733 Tiziano Ave. ");
     document.querySelectorAll(".js-mail").forEach(function(a){a.href=mail;});
     document.querySelectorAll(".js-sms").forEach(function(a){a.href=sms;});
+    var reg = "mailto:"+CONTACT_EMAIL+"?subject="+encodeURIComponent("733 Tiziano – Buyer Registration")+"&body="+encodeURIComponent("Broker name:\nBrokerage:\nPhone:\n\nBuyer name(s) / entity:\nBuyer is a: builder / end-user / investor\nRequested showing window:\n");
+    document.querySelectorAll(".js-register").forEach(function(a){a.href=reg;});
     document.querySelectorAll(".js-email-text").forEach(function(s){s.textContent=CONTACT_EMAIL;});
     document.querySelectorAll(".js-phone-text").forEach(function(s){s.textContent=CONTACT_PHONE;});
 
