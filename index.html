@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>733 Tiziano Avenue · Coral Gables · Off-Market Homesite</title>
+<meta name="description" content="An off-market ±10,200 sf dry homesite in the Platinum Triangle of Coral Gables, bordering Ponce-Davis. Price upon request. Direct from the owner.">
+<meta property="og:title" content="733 Tiziano Avenue · Coral Gables">
+<meta property="og:description" content="Off-market Platinum Triangle homesite. ±10,200 sf, quiet interior street, bordering Ponce-Davis. Price upon request.">
+<meta property="og:image" content="https://733tiziano.com/images/og.jpg">
+<meta property="og:url" content="https://733tiziano.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231a1f1c'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23c9a96a' text-anchor='middle'%3E733%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1f1c; --ink-2:#2a302c; --paper:#f6f3ee; --paper-2:#ece7df;
+    --gold:#c9a96a; --gold-2:#a8884c; --muted:#6f6a62; --line:rgba(26,31,28,.12);
+    --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-weight:300;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{width:min(1180px,calc(100% - 48px));margin:0 auto}
+  @media (max-width:640px){.wrap{width:calc(100% - 32px)}}
+
+  /* Nav */
+  .nav{position:absolute;top:0;left:0;right:0;z-index:10;padding:22px 0}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between}
+  .brand{font-family:var(--serif);font-size:22px;letter-spacing:.18em;color:#fff;text-decoration:none;font-weight:500}
+  .brand small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.3em;font-weight:400;opacity:.75;margin-top:2px}
+  .nav-cta{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.5);padding:11px 20px;transition:all .25s}
+  .nav-cta:hover{background:#fff;color:var(--ink)}
+
+  /* Hero */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--ink)}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,14,12,.45) 0%,rgba(10,14,12,.05) 35%,rgba(10,14,12,.55) 70%,rgba(10,14,12,.92) 100%)}
+  .hero .wrap{position:relative;z-index:2;padding:0 0 72px}
+  .eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:18px}
+  .eyebrow::before{content:"";display:inline-block;width:28px;height:1px;background:var(--gold);vertical-align:middle;margin-right:14px}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(44px,7.5vw,92px);line-height:1;letter-spacing:.01em}
+  h1 em{font-style:italic;color:var(--gold)}
+  .hero p{max-width:620px;font-size:clamp(16px,1.6vw,19px);margin:22px 0 32px;color:rgba(255,255,255,.85)}
+  .btns{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;padding:16px 28px;font-weight:500;transition:all .25s}
+  .btn-gold{background:var(--gold);color:var(--ink)}
+  .btn-gold:hover{background:#fff}
+  .btn-line{border:1px solid rgba(255,255,255,.6);color:#fff}
+  .btn-line:hover{background:#fff;color:var(--ink)}
+  .btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .hero-price{position:absolute;right:0;bottom:72px;text-align:right;display:none}
+  @media (min-width:900px){.hero-price{display:block}}
+  .hero-price span{display:block;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+  .hero-price strong{font-family:var(--serif);font-weight:400;font-size:30px;color:#fff}
+
+  /* Stats */
+  .stats{background:var(--ink);color:#fff}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);border-left:1px solid rgba(255,255,255,.1)}
+  .stat{padding:34px 28px;border-right:1px solid rgba(255,255,255,.1)}
+  .stat b{display:block;font-family:var(--serif);font-weight:400;font-size:36px;line-height:1;color:var(--gold)}
+  .stat span{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;margin-top:10px;color:rgba(255,255,255,.7)}
+  @media (max-width:800px){.stats .wrap{grid-template-columns:repeat(2,1fr);width:100%}.stat{padding:26px 20px}.stat b{font-size:30px}}
+
+  /* Sections */
+  section{padding:104px 0}
+  @media (max-width:640px){section{padding:72px 0}}
+  .lede{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,46px);line-height:1.15;letter-spacing:.005em;max-width:16ch}
+  .lede em{font-style:italic;color:var(--gold-2)}
+  .label{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-2);font-weight:500;margin-bottom:22px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+  @media (max-width:900px){.two{grid-template-columns:1fr;gap:40px}}
+  .prose p{font-size:17px;color:var(--ink-2);margin-bottom:18px;max-width:56ch}
+  .prose p:last-child{margin-bottom:0}
+  .frame{position:relative}
+  .frame img{aspect-ratio:4/3;object-fit:cover;width:100%}
+  .frame::before{content:"";position:absolute;inset:16px -16px -16px 16px;border:1px solid var(--gold);z-index:0;pointer-events:none}
+  .frame img{position:relative;z-index:1}
+  .cap{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:22px}
+
+  /* Details */
+  .details{background:var(--paper-2)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:48px}
+  @media (max-width:800px){.grid{grid-template-columns:1fr}}
+  .cell{background:var(--paper-2);padding:30px 28px}
+  .cell h4{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:10px}
+  .cell p{font-family:var(--serif);font-size:24px;line-height:1.25;font-weight:500}
+  .cell small{display:block;font-size:13px;color:var(--muted);margin-top:8px;font-weight:300}
+
+  /* Location */
+  .map{margin-top:48px;border:1px solid var(--line);background:#ddd;aspect-ratio:16/7;overflow:hidden}
+  @media (max-width:700px){.map{aspect-ratio:4/3}}
+  .map iframe{width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.05)}
+  .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+  .pill{font-size:12px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);padding:9px 16px;color:var(--ink-2)}
+
+  /* Inquire */
+  .inquire{background:var(--ink);color:#fff;text-align:center}
+  .inquire .lede{margin:0 auto;max-width:22ch}
+  .inquire .lede em{color:var(--gold)}
+  .inquire p.sub{max-width:52ch;margin:22px auto 40px;color:rgba(255,255,255,.75);font-size:17px}
+  .contact{display:flex;justify-content:center;gap:18px;flex-wrap:wrap}
+  .contact .btn{min-width:240px;justify-content:center}
+  .contact-lines{margin-top:36px;font-family:var(--serif);font-size:22px;color:rgba(255,255,255,.85)}
+  .contact-lines a{text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:1px}
+  .contact-lines span{display:inline-block;margin:0 14px;color:var(--gold)}
+
+  /* Footer */
+  footer{background:#111513;color:rgba(255,255,255,.55);padding:36px 0;font-size:12px;line-height:1.7}
+  footer .wrap{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+  @media (max-width:800px){footer .wrap{grid-template-columns:1fr}}
+  footer p{max-width:78ch}
+  footer .fb{font-family:var(--serif);font-size:18px;letter-spacing:.18em;color:rgba(255,255,255,.8);white-space:nowrap}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">733 TIZIANO<small>CORAL GABLES</small></a>
+    <a class="nav-cta" href="#inquire">Inquire</a>
+  </div>
+</header>
+
+<section class="hero" id="top" style="padding:0">
+  <img src="images/aerial-front.jpg" alt="Aerial view of 733 Tiziano Avenue, Coral Gables, with the lot boundary outlined" fetchpriority="high">
+  <div class="wrap">
+    <div class="eyebrow">Off-Market &nbsp;·&nbsp; Platinum Triangle &nbsp;·&nbsp; Coral Gables</div>
+    <h1>733 Tiziano <em>Avenue</em></h1>
+    <p>A ±10,200 sf dry homesite on one of the Platinum Triangle's quietest interior streets, bordering the estates of Ponce-Davis. Offered directly by the owner, ahead of any public listing.</p>
+    <div class="btns">
+      <a class="btn btn-gold" href="#inquire">Request Details</a>
+      <a class="btn btn-line js-sms" href="#inquire"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text the Owner</a>
+    </div>
+    <div class="hero-price"><span>Offered at</span><strong>Price upon request</strong></div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>±10,200</b><span>Square-foot lot</span></div>
+    <div class="stat"><b>Dry</b><span>Interior lot · no road noise</span></div>
+    <div class="stat"><b>33143</b><span>Coral Gables · Platinum Triangle</span></div>
+    <div class="stat"><b>Off-MLS</b><span>Direct from owner</span></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap two">
+    <div class="reveal">
+      <div class="label">The Opportunity</div>
+      <h2 class="lede">Buy the dirt <em>before</em> it hits the market.</h2>
+      <div class="prose" style="margin-top:26px">
+        <p>733 Tiziano is a rare ±10,200 sf homesite in the Platinum Triangle, the Coral Gables enclave south of Sunset Drive where quiet streets, mature canopy, and proximity to Ponce-Davis have made it one of the most sought-after addresses for new construction in South Florida.</p>
+        <p>The lot is high, dry, and rectangular, on an interior street with no through-traffic. The existing 1951 residence (2 bed / 2 bath, ±1,800 sf) is livable, which lets a buyer occupy or lease the home while plans move through the City of Coral Gables Board of Architects, rather than carrying a vacant lot.</p>
+        <p>New 4,000–5,000 sf homes on similar-size, non-waterfront lots in the immediate area are commanding $1,250–$1,300 per square foot — $5 million to $6.5 million finished — and more across the line in Ponce-Davis. The property is offered as-is, at land value, with a straightforward closing.</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="frame"><img src="images/aerial-rear.jpg" alt="Aerial view of the rear yard and lot boundary at 733 Tiziano Avenue" loading="lazy"></div>
+      <div class="cap">Rear aerial · lot boundary indicated · survey to be confirmed by buyer</div>
+    </div>
+  </div>
+</section>
+
+<section class="details">
+  <div class="wrap">
+    <div class="label reveal">The Site</div>
+    <h2 class="lede reveal">Everything a builder <em>wants</em> to see.</h2>
+    <div class="grid reveal">
+      <div class="cell"><h4>Lot</h4><p>±10,200 sf</p><small>Rectangular interior lot; buyer to verify by survey</small></div>
+      <div class="cell"><h4>Setting</h4><p>Quiet interior street</p><small>No through-traffic, no road noise; mature canopy</small></div>
+      <div class="cell"><h4>Elevation</h4><p>High &amp; dry</p><small>Not a waterfront or low-lying parcel</small></div>
+      <div class="cell"><h4>Existing Residence</h4><p>1951 · 2 bed / 2 bath</p><small>±1,800 sf, livable during design and permitting</small></div>
+      <div class="cell"><h4>Utilities</h4><p>Public water &amp; electric</p><small>Septic on site; buyer to verify sewer availability</small></div>
+      <div class="cell"><h4>Jurisdiction</h4><p>City of Coral Gables</p><small>Single-family zoning; Board of Architects review</small></div>
+      <div class="cell"><h4>Finished Product</h4><p>$1,250–$1,300 / sf</p><small>New 4,000–5,000 sf homes nearby, non-waterfront</small></div>
+      <div class="cell"><h4>Terms</h4><p>As-is · land value</p><small>Clean, fast closing preferred</small></div>
+      <div class="cell"><h4>Price</h4><p>Upon request</p><small>Off-MLS; shown by appointment to qualified buyers</small></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="label reveal">The Neighborhood</div>
+    <h2 class="lede reveal">The Platinum Triangle, <em>bordering</em> Ponce-Davis.</h2>
+    <div class="prose reveal" style="margin-top:26px">
+      <p>Tucked between Sunset Drive and the Ponce-Davis estates, the Platinum Triangle is a small grid of tree-lined streets where original mid-century homes are steadily giving way to custom estates. It is minutes from the Shops at Merrick Park, downtown Coral Gables, the University of Miami, and the Sunset Drive corridor, yet feels entirely residential.</p>
+    </div>
+    <div class="pills reveal">
+      <span class="pill">Merrick Park</span><span class="pill">Downtown Coral Gables</span><span class="pill">University of Miami</span><span class="pill">Sunset Drive</span><span class="pill">Ponce-Davis</span><span class="pill">Old Cutler Road</span>
+    </div>
+    <div class="map reveal">
+      <iframe title="Map of 733 Tiziano Avenue, Coral Gables" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=733+Tiziano+Ave,+Coral+Gables,+FL+33143&z=15&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="inquire" id="inquire">
+  <div class="wrap">
+    <div class="label reveal" style="color:var(--gold)">Inquire</div>
+    <h2 class="lede reveal">Serious buyers, <em>direct</em> to the owner.</h2>
+    <p class="sub reveal">Pricing, survey, and showing availability are shared with qualified buyers and their representatives. Email is the fastest way to reach us; text is second.</p>
+    <div class="contact reveal">
+      <a class="btn btn-gold js-mail" href="#"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
+      <a class="btn btn-line js-sms" href="#"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text</a>
+    </div>
+    <div class="contact-lines reveal"><a class="js-mail" href="#"><span class="js-email-text"></span></a><span>·</span><a class="js-sms" href="#"><span class="js-phone-text"></span></a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Owners are licensed Florida real estate licensees selling their own property. Property is offered as-is. All dimensions, areas, boundaries, zoning, utilities, and permitting information are approximate, derived from public records, and must be independently verified by buyer. Information is deemed reliable but is not guaranteed and is subject to change or withdrawal without notice. Brokers welcome; please identify your buyer on first contact.</p>
+    <div class="fb">733 TIZIANO · CORAL GABLES</div>
+  </div>
+</footer>
+
+<script>
+  // ───────────────────────────────────────────────────────────────
+  //  EDIT THESE TWO LINES. Everything on the page updates from here.
+  // ───────────────────────────────────────────────────────────────
+  var CONTACT_EMAIL = "733@ii.miami";                // ← your inquiry email
+  var CONTACT_PHONE = "+1 305 000 0000";            // ← your text-capable number (any format)
+  var SUBJECT       = "733 Tiziano Avenue – Inquiry";
+
+  (function(){
+    var tel = CONTACT_PHONE.replace(/[^\d+]/g,"");
+    var mail = "mailto:"+CONTACT_EMAIL+"?subject="+encodeURIComponent(SUBJECT);
+    var sms  = "sms:"+tel+"?&body="+encodeURIComponent("Hi — I'm interested in 733 Tiziano Ave. ");
+    document.querySelectorAll(".js-mail").forEach(function(a){a.href=mail;});
+    document.querySelectorAll(".js-sms").forEach(function(a){a.href=sms;});
+    document.querySelectorAll(".js-email-text").forEach(function(s){s.textContent=CONTACT_EMAIL;});
+    document.querySelectorAll(".js-phone-text").forEach(function(s){s.textContent=CONTACT_PHONE;});
+
+    var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.12});
+    document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+  })();
+</script>
+</body>
+</html>
